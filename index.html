@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Send an Email!</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+        <form id="emailSubmit">
+            <label for="name">Name:</label>
+            <input id="name" type="text" autofocus="on" required/>
+
+            <label for="email">Email:</label>
+            <input id="email" type="text" required/>
+            
+            <label for="subject">Subject:</label>
+            <input id="subject" type="text" required/>
+
+            <label for="important" id="importantLabel">Mark Important?</label>
+            <input id="important" type="checkbox" />
+            
+            <label for="message">Message:</label>
+            <textarea id="message" type="text" required></textarea>
+            
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+    </main>
+  </body>
+</html>
